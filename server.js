@@ -26,7 +26,7 @@ const upload = multer({ storage });
 
 // Middleware
 app.use(cors({
-    origin: ['*',"fax-upload.quipohealth.com"],
+    origin: ['*'],
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
