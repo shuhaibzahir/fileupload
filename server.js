@@ -8,8 +8,8 @@ const app = express();
 const PORT = 3000;
 
 // Hardcoded credentials
-const EMAIL = 'admin@example.com';
-const PASSWORD = '123';
+const EMAIL = 'admin@jvonmedicals.com';
+const PASSWORD = 'jvonmedicals@007';
 
 const uploadDir = path.join(__dirname, 'uploads');
 if (!require('fs').existsSync(uploadDir)) {
@@ -26,7 +26,7 @@ const upload = multer({ storage });
 
 // Middleware
 app.use(cors({
-    origin: ['*'],
+    origin: ['*',"https://fax-upload.quipohealth.com"],
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']

@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:16
+FROM node:16-slim
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install the dependencies
 RUN npm install
-
+RUN mkdir -p /app/uploads
 # Copy the rest of the application code
 COPY . .
 
