@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Build directories
+/build
+
+# Dependency directories
+jspm_packages/
+
+# IDE/editor directories
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NPM package lock file (optional, depends on your workflow)
+package-lock.json
+yarn.lock
+
+# Optional: Ignore test coverage reports
+coverage/
+
+# Ignore uploads folder if not used with Docker mounting
+uploads/
+
+# Ignore debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore custom build files or temporary files
+*.tmp
+*.swp
+*.swo
